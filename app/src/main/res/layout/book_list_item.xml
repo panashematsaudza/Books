@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+
+    android:id="@+id/csrd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:padding="8dp"
+    app:cardElevation="6dp"
+    android:layout_margin="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:padding="8dp"
+            app:srcCompat="@drawable/book_open" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="85"
+            android:orientation="vertical"
+
+
+            >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title Text View"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/title_size"
+
+                />
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title Text View"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/authors_size"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tvPublisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="70"
+                    android:text="Me publisher"
+                    android:textAlignment="textStart" />
+
+                <TextView
+                    android:id="@+id/tvPublishedDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:gravity="end"
+                    android:paddingStart="@dimen/published_date_padding"
+                    android:paddingEnd="@dimen/published_date_padding"
+                    android:text="15 may"
+                    android:textAlignment="textEnd" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+

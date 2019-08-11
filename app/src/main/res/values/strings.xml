@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Books</string>
+    <string name="error_message">Error loading books from google books api</string>
+    <string name="search_title">Search</string>
+    <string name="no_search_data">No Search Data Entered</string>
+
+</resources>
